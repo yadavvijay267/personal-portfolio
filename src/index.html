@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clamor — QC Engineer &amp; Full-Stack Builder</title>
+<meta name="description" content="Portfolio of Clamor, a QC Engineer in telecom and fiber design (B.Tech EEE) building full-stack web projects. Projects, skills, experience and contact.">
+<meta name="keywords" content="Clamor, QC Engineer, telecom, fiber design, portfolio, full-stack">
+<meta name="author" content="Clamor">
+<meta property="og:title" content="Clamor — QC Engineer &amp; Full-Stack Builder">
+<meta property="og:description" content="Projects, skills and experience of Clamor, QC Engineer in telecom / fiber design.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="strip" id="clockStrip" aria-live="off">
+  <span id="clock">--:--:--</span><span class="dot">•</span>
+  <span id="dateLine">Loading date…</span><span class="dot">•</span>
+  <span id="weatherLine">Weather: loading…</span>
+</header>
+
+<nav class="nav">
+  <a class="logo" href="#top">C<span>lamor</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-actions">
+    <button id="themeToggle" class="btn ghost" type="button" aria-label="Toggle dark or light theme">🌙 Dark</button>
+    <button id="menuToggle" class="btn ghost menu" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow"><span id="greeting">Hi, I am</span></p>
+      <h1>Clamor</h1>
+      <p class="role">QC Engineer — Telecom &amp; Fiber Design · Full-Stack Builder</p>
+      <p class="lede">I design and quality-check fiber networks by day and ship original web
+        projects by night. This site is my public home: the work, the skills, and how to reach me.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="../assets/Clamor-Resume.txt" download>⬇ Download résumé</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <p class="hero-meta"><span id="localTime"></span> · <span id="weatherAccentNote"></span></p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb"></div>
+      <div class="card-float">⚡ Fiber QC</div>
+      <div class="card-float two">💻 Full-Stack</div>
+      <div class="card-float three">📐 B.Tech EEE</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p class="section-sub">A few things I built from scratch. Filter by what they prove.</p>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="chip active" data-filter="all" type="button">All</button>
+      <button class="chip" data-filter="web" type="button">Web</button>
+      <button class="chip" data-filter="tools" type="button">Tools</button>
+      <button class="chip" data-filter="data" type="button">Data</button>
+    </div>
+    <div class="grid" id="projectGrid">
+      <article class="card" data-cat="web">
+        <h3>Personal Portfolio</h3><p>A fast single-page portfolio with a time-aware greeting and weather-based accent colours.</p>
+        <p class="tags">HTML · CSS · JavaScript</p>
+      </article>
+      <article class="card" data-cat="web">
+        <h3>SaaS Landing Page</h3><p>Conversion-focused landing page with a live pricing calculator and exit-intent capture.</p>
+        <p class="tags">HTML · CSS · JavaScript</p>
+      </article>
+      <article class="card" data-cat="tools">
+        <h3>Markdown Blog</h3><p>A blog that is also its own CMS: write Markdown, preview live, save to localStorage.</p>
+        <p class="tags">JavaScript · localStorage</p>
+      </article>
+      <article class="card" data-cat="data">
+        <h3>Fiber QC Checklist</h3><p>A field checklist app for fiber installation quality checks, with pass/fail scoring.</p>
+        <p class="tags">JavaScript · PWA-ready</p>
+      </article>
+      <article class="card" data-cat="tools">
+        <h3>ResuMate</h3><p>AI resume builder with ATS scoring, templates and an interview coach.</p>
+        <p class="tags">JavaScript · Gemini API</p>
+      </article>
+      <article class="card" data-cat="data">
+        <h3>Weather Dashboard</h3><p>Current weather, hourly forecast and a 5-day outlook from the free Open-Meteo API.</p>
+        <p class="tags">JavaScript · Open-Meteo</p>
+      </article>
+    </div>
+    <p id="noResults" class="muted" hidden>No projects match that filter.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><span>HTML / CSS</span><div class="bar"><i style="--w:90%"></i></div></div>
+      <div><span>JavaScript</span><div class="bar"><i style="--w:85%"></i></div></div>
+      <div><span>Fiber Design &amp; QC</span><div class="bar"><i style="--w:92%"></i></div></div>
+      <div><span>Git &amp; GitHub</span><div class="bar"><i style="--w:80%"></i></div></div>
+      <div><span>Cloudflare Workers</span><div class="bar"><i style="--w:70%"></i></div></div>
+      <div><span>Python</span><div class="bar"><i style="--w:65%"></i></div></div>
+    </div>
+    <p class="muted">Skill levels are self-assessed and honest — they grow with every project shipped.</p>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li><strong>QC Engineer — Planning &amp; Designing</strong><span>Apr 2026 – Present · Noida, India</span>
+        <p>Quality control for fiber network planning and design; checking drawings, routes and documentation before handover.</p></li>
+      <li><strong>Fiber Design Engineer</strong><span>Dec 2023 – Apr 2026 · Noida, India</span>
+        <p>Designed fiber routes and network plans for telecom projects; coordinated with field teams on feasibility.</p></li>
+      <li><strong>B.Tech, Electrical &amp; Electronics Engineering</strong><span>2023</span>
+        <p>Undergraduate degree — the foundation for telecom, power and data-centre work.</p></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p class="section-sub">Have a project, a role, or just a question? Send a message — it is validated in your browser before anything is sent.</p>
+    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+      <label>Name <input name="name" id="fName" type="text" required minlength="2" placeholder="Your name"></label>
+      <label>Email <input name="email" id="fEmail" type="email" required placeholder="you@example.com"></label>
+      <label>Message <textarea name="message" id="fMsg" required minlength="10" rows="5" placeholder="Tell me about your project…"></textarea></label>
+      <p class="form-error" id="formError" role="alert" hidden></p>
+      <p class="form-ok" id="formOk" role="status" hidden>Thanks — your message looks good. Replace the Formspree form ID in the form action to send it for real.</p>
+      <button class="btn primary" type="submit">Send message</button>
+    </form>
+    <p class="muted">Prefer GitHub? Find me at <a href="https://github.com/yadavvijay267" target="_blank" rel="noopener">github.com/yadavvijay267</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year">2026</span> Clamor · Built with HTML, CSS and vanilla JavaScript · No trackers.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

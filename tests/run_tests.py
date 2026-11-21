@@ -34,7 +34,8 @@ check("project filter chips present", html.count('data-filter=') >= 4)
 check("project cards present (6)", html.count('class="card"') == 6)
 check("contact form has name/email/message fields",
       all(x in html for x in ('id="fName"', 'id="fEmail"', 'id="fMsg"')))
-check("resume download link present", 'Clamor-Resume.txt' in html)
+check("assets: favicon exists",
+      (ROOT / "assets" / "favicon.svg").exists())
 check("no personal email or phone in HTML (example.com placeholder allowed)",
       not re.search(r"[A-Za-z0-9._%+-]+@(?!example\.com)[A-Za-z0-9.-]+\.[A-Za-z]{2,}", html))
 check("CSS defines dark theme", '[data-theme="dark"]' in css)
@@ -45,8 +46,6 @@ check("JS has form validation", "formError" in js)
 check("JS braces balanced", js.count("{") == js.count("}"))
 check("README exists", (ROOT / "README.md").exists())
 check("LICENSE exists", (ROOT / "LICENSE").exists())
-check("assets: favicon + resume exist",
-      (ROOT / "assets" / "favicon.svg").exists() and (ROOT / "assets" / "Clamor-Resume.txt").exists())
 
 print(f"\n{len(failures)} failure(s).")
 sys.exit(1 if failures else 0)

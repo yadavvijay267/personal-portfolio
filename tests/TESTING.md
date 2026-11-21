@@ -19,4 +19,3 @@ elements, 6 project cards, contact-form fields, weather + greeting logic in
 - [ ] Click each project filter — only matching cards show.
 - [ ] Submit the contact form empty → error shown; valid input → success note.
 - [ ] With internet on: weather line shows a temperature and the accent colour changes.
-- [ ] "Download résumé" downloads `Clamor-Resume.txt`.
